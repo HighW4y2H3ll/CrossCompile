@@ -24,5 +24,5 @@ Run apt-get update && apt-get install -y \
         gcc-9-multilib-i686-linux-gnu g++-9-multilib-i686-linux-gnu \
         gcc-9-multilib-powerpc-linux-gnu gcc-9-multilib-powerpc64-linux-gnu g++-9-multilib-powerpc-linux-gnu g++-9-multilib-powerpc64-linux-gnu
 
-Run useradd hu -s /bin/bash
-Run usermod -a -G adm hu 
+#Run useradd hu -s /bin/bash
+#Run usermod -a -G adm hu 
