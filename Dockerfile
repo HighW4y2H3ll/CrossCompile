@@ -4,15 +4,18 @@ From debian:unstable-slim
 #Run echo "deb http://www.emdebian.org/debian/ unstable main" > /etc/apt/sources.list.d/emdebian.list
 #Run echo "deb http://ftp.us.debian.org/debian/ unstable main" >> /etc/apt/sources.list.d/emdebian.list
 
+# Buster is the last version of Debian that supports MIPS (32bits big endian)
+Run echo "deb http://deb.debian.org/debian buster main" >> /etc/apt/sources.list
+
 Run dpkg --add-architecture armhf
 Run dpkg --add-architecture armel
 Run dpkg --add-architecture arm64
 Run dpkg --add-architecture mips
-Run dpkg --add-architecture mips64
+#Run dpkg --add-architecture mips64
 Run dpkg --add-architecture mipsel
 Run dpkg --add-architecture mips64el
 Run dpkg --add-architecture i386
-Run dpkg --add-architecture powerpc
+#Run dpkg --add-architecture powerpc
 Run dpkg --add-architecture ppc64el
 
 Run apt-get update && apt-get install -y \
